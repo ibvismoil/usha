@@ -1,0 +1,19 @@
+{
+  "projects": [
+    {
+      "id": "1",
+      "title": "Portfolio Website",
+      "description": "A personal portfolio built with React."
+    },
+    {
+      "id": "2",
+      "title": "E-commerce Store",
+      "description": "An online store with full shopping cart functionality."
+    },
+    {
+      "id": "861c",
+      "title": "hello",
+      "description": "no"
+    }
+  ]
+}
