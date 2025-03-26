@@ -6,6 +6,7 @@ function Home() {
       <h1>Welcome to My Portfolio</h1>
       <p>Discover my work and projects</p>
       <Link to="/projects" className="button">View Projects</Link>
+      <Link to="/admin" className="button">Admin</Link>
     </div>
   );
 }
