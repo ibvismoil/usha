@@ -1,38 +1,85 @@
-/* styles/projectDetails.css */
-.container {
-    max-width: 800px;
-    margin: 40px auto;
-    padding: 20px;
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
+.project-details-container {
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.loader {
+  font-size: 1.5rem;
+  color: #ffffff;
+  text-align: center;
+  padding: 50px;
+}
+
+.project-card {
+  background: #222;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: left;
+  box-shadow: 0px 4px 10px rgba(0, 123, 255, 0.3);
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 0.5s ease-out forwards;
+}
+
+.project-image {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.project-info h1 {
+  font-size: 2rem;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.project-info p {
+  font-size: 1rem;
+  color: #b0b0b0;
+  margin-bottom: 15px;
+}
+
+.project-text {
+  font-style: italic;
+  color: #a0a0a0;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 15px;
+  margin-top: 10px;
+  background: #007bff;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.button:hover {
+  background: #0056b3;
+}
+
+.button.back {
+  background: #333;
+  margin-left: 10px;
+}
+
+.button.back:hover {
+  background: #444;
+}
+
+/* Анимация появления */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
   }
-  
-  h1 {
-    font-size: 2.5rem;
-    color: #333;
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
-  
-  p {
-    font-size: 1.2rem;
-    color: #666;
-    margin: 20px 0;
-  }
-  
-  .button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    text-decoration: none;
-    font-size: 1rem;
-  }
-  
-  .button:hover {
-    background-color: #0056b3;
-  }
-  
+}
